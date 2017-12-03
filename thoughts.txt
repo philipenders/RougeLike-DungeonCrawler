@@ -66,3 +66,10 @@ or method and the engine would decide what to do depending on keys pressed.
 future versions
   -snake oil (everyone loves the smell of snake oil, and the more you rub on yourself, the better prices get)
   -controls screen
+
+  For next time we meet,  finalize what we want for attributes on the players, enemy attributes, what our beasiary is, and what items we want
+  20 items max, 3 enemies,  easy, less easy, boss,
+
+ beastiary
+ items
+  shortdescription, verbosedescription, stats n stuff
