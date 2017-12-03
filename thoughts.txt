@@ -1,0 +1,68 @@
+So yeah.
+
+- Engine
+    *The menus (load into the game, change settings if applicable, etc.)
+    *Once the game starts, the engine: wait for key inputs -> update the game state
+    *redraw the screen whenever the game state updates(key input)
+    *the engine should be able to take in a GameState Object, and then render based on that GSO.
+
+-GameState Object
+    *functional or state-based? not a huge deal, but have to decide
+    *it likely contains what level # you're on, where player is, where enemies/objects/obstacles are.
+    * Player Object + list of Enemy Objects
+    * Contains the map (maybe a small subobject, called worldorsomething)
+
+-Class Player
+    *Inventory
+    *other attributes
+
+-Class NPC
+
+-Class Enemy (either config or subclass)
+
+-Class Item
+
+(Main loop orbably maintains a gamestate or the engine.  And on whichever of those,  there would be an "UpdateState" function
+or method and the engine would decide what to do depending on keys pressed.
+
+
+-Ideas
+    *City - various levels, the city("safe"), the sewers(Easy levels), the labyrnth(goblins are more active), the goblinholm(look at the name)
+    - City
+        *Merchants for various things (basic to advanced, weapons, tools, etc.)
+        *maybe minor side quests (eventually)
+        *beacons get placed around the city, so you need to put the gems in the right places
+        *last adventurer- all the others have died, so the town has basically given up.
+        *overworld plot (later)
+
+-Hacklike
+    *as you go down, the levels go down, but as you go down it remembers where you've been.
+
+
+-Bandlike
+    *top levels are consistent
+
+0.1 our first goal:
+    - There is a city at the top small, one screen.
+    - level generator
+    - the city should have a shop
+        *The shop sells, upgrades to your sword, pack, armor, boots!, hats.
+    - one dungeon underneath, 20 levels long
+    - chests in the dungeon, 1 contains beacon in each level, 1 chance to contain loot
+    - the city pays you for placing beacons, especially in case the dungeon didn't give good loot. (shop will buy loot)
+    - all loot items must have a "value"
+    - Combat (adjacent including diagonals)
+    - Order of Resolution: Player, then everything else
+    - To get the last Crystal you must fight the Orc Captain
+
+    to decide:
+        * What traits / attributes players/monsters have
+        * What item/inventory exist/ what kind of things there are.
+            -weapon slot, pack, armor, boots!, misc 1, misc 2
+            -weapons, bags, armor, boots!, misc_wearables, misc_other, beacons, nazi_scalps, potion
+        *A beastiary (goblins, orcs, rats, etc.)
+
+
+future versions
+  -snake oil (everyone loves the smell of snake oil, and the more you rub on yourself, the better prices get)
+  -controls screen
